@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.dawn.bannerimageandvideo"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //    // 饺子视频播放器
+    //    implementation 'cn.jzvd:jiaozivideoplayer:6.2.7'
+    implementation project(':videoplayerlibrary')
+    implementation project(':nicevideoplayer')
+    //start**************用于qsvideoplayer的视频播放*************end
+    implementation project(':qsvideoplayer')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    //弹幕
+    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+    implementation files('libs/exo-2.0.4.jar')
+    //end***********用于qsvideoplayer的视频播放*****************end
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+}

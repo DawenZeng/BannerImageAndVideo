@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="用SharePreference保存对象集合" />
+
+    <TextView
+        android:id="@+id/btn_addString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存String类型集合"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/btn_getString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="获取String集合"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/btn_addJavaBean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:onClick="btn3"
+        android:padding="10dp"
+        android:text="保存Userbean对象集合"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/btn_getJavaBean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="获取Userbean对象集合"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/btn_addMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存Map集合"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/btn_getMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="得到Map集合"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
